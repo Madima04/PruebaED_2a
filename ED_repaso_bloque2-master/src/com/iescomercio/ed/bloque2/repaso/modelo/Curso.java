@@ -10,7 +10,7 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 * */
-	public void eliminarAlumno(String dni) throws Exception {
+	public  void eliminarAlumno(String dni) throws Exception {
 		if(dni.length()==9) {//comprobar la longitud del dni
 			listaAlumnos.remove(new Persona(dni, "", "")); //solo hace falta el dni
 		}else {
@@ -28,7 +28,7 @@ public class Curso {
 	/*
 	 * Documentar y crear test unitario
 	 * */
-	public Boolean estaRegistrado(String dni) {
+	public  Boolean estaRegistrado(String dni) {
 		int i =0;
 		Boolean encontrado=false;
 		while (!encontrado && i<listaAlumnos.size()) {
